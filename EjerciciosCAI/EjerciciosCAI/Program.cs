@@ -7,7 +7,9 @@ namespace EjerciciosCAI
         static void Main(string[] args)
         {
             Ejercicios e = new Ejercicios();
-            e.ejercicio1();
+            //e.ejercicio1();
+            //e.ejercicio2();
+            //e.ChequearNumeroPrimero(3);
 
         }
     }

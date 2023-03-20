@@ -6,7 +6,9 @@ namespace EjerciciosCAI
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Ejercicios e = new Ejercicios();
+            e.ejercicio1();
+
         }
     }
 }

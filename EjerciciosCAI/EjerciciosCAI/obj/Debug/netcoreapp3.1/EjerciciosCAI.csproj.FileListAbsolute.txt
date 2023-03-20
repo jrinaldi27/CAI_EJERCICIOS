@@ -1,0 +1,14 @@
+C:\Users\julia\Desktop\UBA\CAI\CAI_EJERCICIOS\EjerciciosCAI\EjerciciosCAI\obj\Debug\netcoreapp3.1\EjerciciosCAI.csproj.AssemblyReference.cache
+C:\Users\julia\Desktop\UBA\CAI\CAI_EJERCICIOS\EjerciciosCAI\EjerciciosCAI\obj\Debug\netcoreapp3.1\EjerciciosCAI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julia\Desktop\UBA\CAI\CAI_EJERCICIOS\EjerciciosCAI\EjerciciosCAI\obj\Debug\netcoreapp3.1\EjerciciosCAI.AssemblyInfoInputs.cache
+C:\Users\julia\Desktop\UBA\CAI\CAI_EJERCICIOS\EjerciciosCAI\EjerciciosCAI\obj\Debug\netcoreapp3.1\EjerciciosCAI.AssemblyInfo.cs
+C:\Users\julia\Desktop\UBA\CAI\CAI_EJERCICIOS\EjerciciosCAI\EjerciciosCAI\obj\Debug\netcoreapp3.1\EjerciciosCAI.csproj.CoreCompileInputs.cache
+C:\Users\julia\Desktop\UBA\CAI\CAI_EJERCICIOS\EjerciciosCAI\EjerciciosCAI\bin\Debug\netcoreapp3.1\EjerciciosCAI.exe
+C:\Users\julia\Desktop\UBA\CAI\CAI_EJERCICIOS\EjerciciosCAI\EjerciciosCAI\bin\Debug\netcoreapp3.1\EjerciciosCAI.deps.json
+C:\Users\julia\Desktop\UBA\CAI\CAI_EJERCICIOS\EjerciciosCAI\EjerciciosCAI\bin\Debug\netcoreapp3.1\EjerciciosCAI.runtimeconfig.json
+C:\Users\julia\Desktop\UBA\CAI\CAI_EJERCICIOS\EjerciciosCAI\EjerciciosCAI\bin\Debug\netcoreapp3.1\EjerciciosCAI.runtimeconfig.dev.json
+C:\Users\julia\Desktop\UBA\CAI\CAI_EJERCICIOS\EjerciciosCAI\EjerciciosCAI\bin\Debug\netcoreapp3.1\EjerciciosCAI.dll
+C:\Users\julia\Desktop\UBA\CAI\CAI_EJERCICIOS\EjerciciosCAI\EjerciciosCAI\bin\Debug\netcoreapp3.1\EjerciciosCAI.pdb
+C:\Users\julia\Desktop\UBA\CAI\CAI_EJERCICIOS\EjerciciosCAI\EjerciciosCAI\obj\Debug\netcoreapp3.1\EjerciciosCAI.dll
+C:\Users\julia\Desktop\UBA\CAI\CAI_EJERCICIOS\EjerciciosCAI\EjerciciosCAI\obj\Debug\netcoreapp3.1\EjerciciosCAI.pdb
+C:\Users\julia\Desktop\UBA\CAI\CAI_EJERCICIOS\EjerciciosCAI\EjerciciosCAI\obj\Debug\netcoreapp3.1\EjerciciosCAI.genruntimeconfig.cache

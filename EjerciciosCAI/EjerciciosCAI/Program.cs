@@ -11,7 +11,9 @@ namespace EjerciciosCAI
             //e.ejercicio2();
             //e.ChequearNumeroPrimero(3);
             //e.ChequearPalindromo();
-            e.ejercicio5();
+            //e.ejercicio5();
+            //e.ejercicio6();
+            e.ejercicio8();
         }
     }
 }

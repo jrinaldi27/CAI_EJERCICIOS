@@ -124,5 +124,26 @@ namespace EjerciciosCAI
 
             Console.WriteLine("El numero al reves es: " + numeroAlReves);
         }
+
+        public void ejercicio6()
+        {
+            Console.WriteLine("Ingrese el primer termino");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Ingrese el segundo termino");
+            int b = Convert.ToInt32(Console.ReadLine());
+
+            int operacion = (a + b) * (a - b);
+
+            Console.WriteLine("El resultado de la operacion es: " + operacion); 
+        }
+
+        public void ejercicio8()
+        {
+            DateTime fechaIngresada = Convert.ToDateTime(Console.ReadLine());
+            DateTime fechaActual = DateTime.Now;
+
+            TimeSpan diferenciaFechas = ( fechaIngresada - fechaActual);
+            Console.WriteLine(diferenciaFechas);
+        }
     }
 }

@@ -46,7 +46,7 @@ namespace EjerciciosCAI
                 {
                     Console.WriteLine(i + "Es primo");
                 }
-                else if(i % 3 == 0)
+                else if (i % 3 == 0)
                 {
                     Console.WriteLine(i + "Es multiplo de 3");
                 }
@@ -54,8 +54,8 @@ namespace EjerciciosCAI
                 {
                     Console.WriteLine(i);
                 }
-            
-            
+
+
             }
         }
 
@@ -63,7 +63,7 @@ namespace EjerciciosCAI
         {
             bool flag = false;
             int contador = 0;
-            for (int i = 1; i < numero + 1 ; i++)
+            for (int i = 1; i < numero + 1; i++)
             {
                 int numeroAEvaluar = numero % i;
                 if (numeroAEvaluar == 0)
@@ -118,7 +118,7 @@ namespace EjerciciosCAI
 
             for (int i = 0; i < numero.Length; i++)
             {
-                numeroAlReves += numero[posicion-1];
+                numeroAlReves += numero[posicion - 1];
                 posicion--;
             }
 
@@ -134,7 +134,7 @@ namespace EjerciciosCAI
 
             int operacion = (a + b) * (a - b);
 
-            Console.WriteLine("El resultado de la operacion es: " + operacion); 
+            Console.WriteLine("El resultado de la operacion es: " + operacion);
         }
 
         public void ejercicio8()
@@ -142,8 +142,30 @@ namespace EjerciciosCAI
             DateTime fechaIngresada = Convert.ToDateTime(Console.ReadLine());
             DateTime fechaActual = DateTime.Now;
 
-            TimeSpan diferenciaFechas = ( fechaIngresada - fechaActual);
+            TimeSpan diferenciaFechas = (fechaIngresada - fechaActual);
             Console.WriteLine(diferenciaFechas);
+        }
+
+        public void ejercicio9()
+        {
+            string miUsuario = "JulianRinaldi";
+            string inputUsuario = Console.ReadLine();
+
+            if (inputUsuario == miUsuario)
+            {
+                Console.WriteLine("Hola " + miUsuario + " bienvenido");
+
+            }
+            else
+            {
+                Console.WriteLine("No te conozco");
+            }
+        }
+
+        public void ejercicio10()
+        {
+            char input = Convert.ToChar(Console.ReadLine());
+
         }
     }
 }

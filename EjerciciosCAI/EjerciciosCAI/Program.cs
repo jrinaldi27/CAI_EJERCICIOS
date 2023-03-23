@@ -13,7 +13,8 @@ namespace EjerciciosCAI
             //e.ChequearPalindromo();
             //e.ejercicio5();
             //e.ejercicio6();
-            e.ejercicio8();
+            //e.ejercicio8();
+            e.ejercicio10();
         }
     }
 }

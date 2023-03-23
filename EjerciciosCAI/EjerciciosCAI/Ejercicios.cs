@@ -79,5 +79,34 @@ namespace EjerciciosCAI
             }
             return flag;
         }
+
+
+        public void ChequearPalindromo()
+        {
+
+
+            string palabraAChequear = Console.ReadLine();
+            string palabraAlReves = "";
+            int posicion = palabraAChequear.Length;
+
+            for (int i = 0; i < palabraAChequear.Length; i++)
+            {
+                palabraAlReves = palabraAlReves + palabraAChequear[posicion - 1].ToString();
+                posicion--;
+            }
+
+            Console.WriteLine(palabraAChequear);
+            Console.WriteLine(palabraAlReves);
+
+            if (palabraAChequear == palabraAlReves)
+            {
+                Console.WriteLine("Es palindromo");
+            }
+            else
+            {
+                Console.WriteLine("No es palindromo");
+            }
+
+        }
     }
 }

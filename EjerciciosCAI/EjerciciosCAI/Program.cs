@@ -9,12 +9,15 @@ namespace EjerciciosCAI
             Ejercicios e = new Ejercicios();
             //e.ejercicio1();
             //e.ejercicio2();
-            //e.ChequearNumeroPrimero(3);
             //e.ChequearPalindromo();
+            e.ejercicio4();
             //e.ejercicio5();
             //e.ejercicio6();
             //e.ejercicio8();
-            e.ejercicio10();
+            //e.ejercicio9();
+            //e.ejercicio10();
+            //e.ejercicio11();
+            
         }
     }
 }

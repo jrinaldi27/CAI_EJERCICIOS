@@ -108,6 +108,42 @@ namespace EjerciciosCAI
             }
 
         }
+        public void ejercicio4()
+
+        {
+            Console.WriteLine("Ingrese la primer palabra");
+            string palabra1 = Console.ReadLine().ToLower();
+            Console.WriteLine("Ingrese la segunda palabra");
+            string palabra2 = Console.ReadLine().ToLower();
+
+            if (palabra1.Length != palabra2.Length)
+            {
+                Console.WriteLine(palabra1 + " y " + palabra2 + " no son anagramas");
+            }
+
+            else
+            {
+                int acumulador = 0;
+                
+                for (int i = 0; i< palabra1.Length; i++)
+                {
+                    for(int j=0; j<palabra2.Length; j++)
+                    {
+                        if(palabra1[i] == palabra2[j])
+                        {
+                            palabra2 = palabra2.Remove(j, 1);
+                        }
+                    }
+                }
+
+                if (palabra2.Length == 0)
+                {
+                    Console.WriteLine("Las palabras son anagrama");
+                }
+            }
+
+        }
+
 
         public void ejercicio5()
         {
@@ -164,8 +200,79 @@ namespace EjerciciosCAI
 
         public void ejercicio10()
         {
-            char input = Convert.ToChar(Console.ReadLine());
+            bool flag;
+            char caracter;
+
+            do
+            {
+                flag = false;
+                
+
+                if (!char.TryParse(Console.ReadLine().ToLower(), out caracter))
+                {
+                    Console.WriteLine("Usted no ingreso un caracter");
+                }
+
+                else
+                {
+                    flag = true;
+                }
+            } while (flag == false);
+            
+            if (char.IsDigit(caracter))
+            {
+                Console.WriteLine("El numero ingresado es" + caracter);
+            }
+
+            else if(caracter == 'a')
+            {
+                Console.WriteLine("Usted ingreso la vocal: " + caracter);
+            }
+            else if (caracter == 'e')
+            {
+                Console.WriteLine("Usted ingreso la vocal: " + caracter);
+            }
+            else if (caracter == 'i')
+            {
+                Console.WriteLine("Usted ingreso la vocal: " + caracter);
+            }
+            else if (caracter == 'o')
+            {
+                Console.WriteLine("Usted ingreso la vocal: " + caracter);
+            }
+            else if (caracter == 'u')
+            {
+                Console.WriteLine("Usted ingreso la vocal: " + caracter);
+            }
+            else
+            {
+                Console.WriteLine("Usted ingreso la consonante: " + caracter);
+            }
 
         }
+
+        public void ejercicio11()
+        {
+            Console.WriteLine("Ingrese nombre apellido y edad");
+            string input = Console.ReadLine();
+            string edad = "";
+            string nombre = "";
+            string apellido = "";
+
+            for( int i = 0; i<input.Length ; i++)
+            {
+                if (char.IsDigit(input[i]))
+                {
+                    edad += input[i];
+                }
+            }
+
+            string cadenaSinNro = input.Trim(new Char[] { '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', ' ' });
+            string [] palabras = cadenaSinNro.Split(' ');
+            nombre = palabras[0];
+            apellido = palabras[1];
+            Console.WriteLine("Nombre: " + nombre + ", Apellido: " + apellido + ", Edad: " + edad);
+        }
+       
     }
 }

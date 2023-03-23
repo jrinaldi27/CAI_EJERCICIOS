@@ -10,7 +10,8 @@ namespace EjerciciosCAI
             //e.ejercicio1();
             //e.ejercicio2();
             //e.ChequearNumeroPrimero(3);
-            e.ChequearPalindromo();
+            //e.ChequearPalindromo();
+            e.ejercicio5();
         }
     }
 }

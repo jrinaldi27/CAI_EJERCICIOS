@@ -108,5 +108,21 @@ namespace EjerciciosCAI
             }
 
         }
+
+        public void ejercicio5()
+        {
+            Console.WriteLine("Ingrese un numero de 5 cifras");
+            string numero = Console.ReadLine();
+            string numeroAlReves = "";
+            int posicion = numero.Length;
+
+            for (int i = 0; i < numero.Length; i++)
+            {
+                numeroAlReves += numero[posicion-1];
+                posicion--;
+            }
+
+            Console.WriteLine("El numero al reves es: " + numeroAlReves);
+        }
     }
 }

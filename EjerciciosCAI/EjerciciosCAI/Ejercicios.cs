@@ -273,6 +273,54 @@ namespace EjerciciosCAI
             apellido = palabras[1];
             Console.WriteLine("Nombre: " + nombre + ", Apellido: " + apellido + ", Edad: " + edad);
         }
+
+        public void ejercicio12()
+        {
+            Console.WriteLine("Ingrese la primer fecha");
+            DateTime fecha1 = Convert.ToDateTime(Console.ReadLine());
+            Console.WriteLine("Ingrese la segunda fecha");
+            DateTime fecha2 = Convert.ToDateTime(Console.ReadLine());
+            double resultadoDias;
+            double resultadoAños;
+
+            resultadoDias = Math.Abs((fecha1 - fecha2).TotalDays);
+            resultadoAños = Math.Floor(resultadoDias / 365);
+            resultadoDias = resultadoDias - resultadoAños * 365;
+            double meses = Math.Floor(resultadoAños / 31);
+            resultadoDias = resultadoDias - meses * 31;
+
+            Console.WriteLine("La diferencia es de " + resultadoAños + " años, " + meses + " meses y " + resultadoDias + " días.");
+
+        }
+
+        public void ejercicio13()
+        {
+            Console.WriteLine("Ingrese numero para calcular el factorial");
+            int numero = Convert.ToInt32(Console.ReadLine());
+
+            int resultado = 1;
+            for (int i = 1; i <= numero; i++)
+            {
+                resultado *= i;
+            }
+            Console.WriteLine(resultado);
+            
+        }
+
+        public void ejercicio14()
+        {
+            Console.WriteLine("Ingrese un numero para calcular su tabla de multiplicar");
+            int numero = Convert.ToInt32(Console.ReadLine());
+            int[] numeros = new int[10];
+
+            for (int i = 1; i<11; i++)
+            {
+                numeros[i - 1] = i;
+                Console.WriteLine(numero + "*" + i + " = " + (numero * i));
+            }
+            
+
+        }
        
     }
 }

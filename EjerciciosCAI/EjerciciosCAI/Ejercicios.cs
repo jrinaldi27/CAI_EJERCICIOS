@@ -321,6 +321,57 @@ namespace EjerciciosCAI
             
 
         }
+        public void ejercicio15()
+        {
+            string usuario = "Jr1234";
+            string contraseña = "perrito1234";
+            
+            bool flag = false;
+            bool flag2 = false; 
+            int intentos = 3;
+            do
+            {
+                
+                 
+                
+                do
+                {
+                    Console.WriteLine("Por favor ingrese usuario:");
+                    string usuarioIngresado = Console.ReadLine();
+                    Console.WriteLine("Ingrese contraseña:");
+                    string contraseñaIngresada = Console.ReadLine();
+
+                    if (usuarioIngresado != usuario)
+                    {
+                        flag = true;
+                        flag2 = false;
+                        Console.WriteLine("Usuario no reconocido");
+                        
+                    }
+                    else if ((usuarioIngresado == usuario) & (contraseña != contraseñaIngresada))
+                    {
+                        intentos--;
+                        Console.WriteLine("La contraseña ingresada es incorrecta le quedan " + intentos + " restantes");
+                        if (intentos == 0)
+                        {
+                            Console.WriteLine("Usted se quedo sin intentos comuniquese con asistencia al usuario para recuperar su cuenta");
+                            flag = true;
+                            flag2 = true;
+                        }
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("Bienvenido de nuevo" + usuarioIngresado);
+                        flag = true;
+                        flag2 = true;
+                    }
+
+
+                } while (flag == false);
+
+            } while (flag2 == false);
+        }
        
     }
 }

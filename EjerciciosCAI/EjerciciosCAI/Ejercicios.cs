@@ -372,6 +372,47 @@ namespace EjerciciosCAI
 
             } while (flag2 == false);
         }
-       
+
+        public void ejercicio16()
+        {
+            Console.WriteLine("Ingrese un numero");
+            string numero = Console.ReadLine();
+            Console.WriteLine("Numero ingresado: " + numero + "tiene: " + (numero.Length ) + " digitos");
+        }
+        
+        public void ejercicio17()
+        {
+            string[,] datosEmpleados = new string[5,2];
+            bool flag;
+
+            for (int i = 0; i< datosEmpleados.GetLength(0); i++)
+            {
+                string nombreEmpleado;
+                string sueldoEmpleado;
+
+                Console.WriteLine("Ingrese nombre del empleado");
+                nombreEmpleado = Console.ReadLine();
+                Console.WriteLine("Ingrese sueldo del empleado");
+                sueldoEmpleado = Console.ReadLine();
+
+                datosEmpleados[i, 0] = nombreEmpleado;
+                datosEmpleados[i, 1] = sueldoEmpleado;
+
+                
+            }
+
+            List<int> sueldos = new List<int> ();
+
+            for(int i = 0; i<5; i++)
+            {
+                Console.WriteLine("Nombre: " + datosEmpleados[i, 0] + "Sueldo: " + datosEmpleados[i, 1]);
+
+                sueldos[i] = Convert.ToInt32(datosEmpleados[i, 1]);
+
+            }
+
+            List<int> ordenados = new List<int>();
+            ordenados = sueldos.orderBy
+        }
     }
 }

@@ -124,12 +124,12 @@ namespace EjerciciosCAI
             else
             {
                 int acumulador = 0;
-                
-                for (int i = 0; i< palabra1.Length; i++)
+
+                for (int i = 0; i < palabra1.Length; i++)
                 {
-                    for(int j=0; j<palabra2.Length; j++)
+                    for (int j = 0; j < palabra2.Length; j++)
                     {
-                        if(palabra1[i] == palabra2[j])
+                        if (palabra1[i] == palabra2[j])
                         {
                             palabra2 = palabra2.Remove(j, 1);
                         }
@@ -206,7 +206,7 @@ namespace EjerciciosCAI
             do
             {
                 flag = false;
-                
+
 
                 if (!char.TryParse(Console.ReadLine().ToLower(), out caracter))
                 {
@@ -218,13 +218,13 @@ namespace EjerciciosCAI
                     flag = true;
                 }
             } while (flag == false);
-            
+
             if (char.IsDigit(caracter))
             {
                 Console.WriteLine("El numero ingresado es" + caracter);
             }
 
-            else if(caracter == 'a')
+            else if (caracter == 'a')
             {
                 Console.WriteLine("Usted ingreso la vocal: " + caracter);
             }
@@ -259,7 +259,7 @@ namespace EjerciciosCAI
             string nombre = "";
             string apellido = "";
 
-            for( int i = 0; i<input.Length ; i++)
+            for (int i = 0; i < input.Length; i++)
             {
                 if (char.IsDigit(input[i]))
                 {
@@ -268,7 +268,7 @@ namespace EjerciciosCAI
             }
 
             string cadenaSinNro = input.Trim(new Char[] { '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', ' ' });
-            string [] palabras = cadenaSinNro.Split(' ');
+            string[] palabras = cadenaSinNro.Split(' ');
             nombre = palabras[0];
             apellido = palabras[1];
             Console.WriteLine("Nombre: " + nombre + ", Apellido: " + apellido + ", Edad: " + edad);
@@ -304,7 +304,7 @@ namespace EjerciciosCAI
                 resultado *= i;
             }
             Console.WriteLine(resultado);
-            
+
         }
 
         public void ejercicio14()
@@ -313,27 +313,27 @@ namespace EjerciciosCAI
             int numero = Convert.ToInt32(Console.ReadLine());
             int[] numeros = new int[10];
 
-            for (int i = 1; i<11; i++)
+            for (int i = 1; i < 11; i++)
             {
                 numeros[i - 1] = i;
                 Console.WriteLine(numero + "*" + i + " = " + (numero * i));
             }
-            
+
 
         }
         public void ejercicio15()
         {
             string usuario = "Jr1234";
             string contraseña = "perrito1234";
-            
+
             bool flag = false;
-            bool flag2 = false; 
+            bool flag2 = false;
             int intentos = 3;
             do
             {
-                
-                 
-                
+
+
+
                 do
                 {
                     Console.WriteLine("Por favor ingrese usuario:");
@@ -346,7 +346,7 @@ namespace EjerciciosCAI
                         flag = true;
                         flag2 = false;
                         Console.WriteLine("Usuario no reconocido");
-                        
+
                     }
                     else if ((usuarioIngresado == usuario) & (contraseña != contraseñaIngresada))
                     {
@@ -377,7 +377,7 @@ namespace EjerciciosCAI
         {
             Console.WriteLine("Ingrese un numero");
             string numero = Console.ReadLine();
-            Console.WriteLine("Numero ingresado: " + numero + "tiene: " + (numero.Length ) + " digitos");
+            Console.WriteLine("Numero ingresado: " + numero + "tiene: " + (numero.Length) + " digitos");
         }
 
         public void ejercicio17()
@@ -401,9 +401,9 @@ namespace EjerciciosCAI
 
             }
 
-            int[] sueldos = new int[5] ;
+            int[] sueldos = new int[5];
 
-            for(int i = 0; i<5; i++)
+            for (int i = 0; i < 5; i++)
             {
                 Console.WriteLine("Nombre:" + datosEmpleados[i, 0] + " Sueldo:" + datosEmpleados[i, 1]);
 
@@ -414,7 +414,7 @@ namespace EjerciciosCAI
 
             Console.WriteLine("El salario mas alto es: " + sueldos[4]);
 
-            
+
         }
 
         public void ejercicio18()
@@ -450,14 +450,14 @@ namespace EjerciciosCAI
 
             Console.WriteLine("El numero ingresado en decimal es: " + numero + "\n"
                               + "En binario: " + binario + "\n" + "En octal:" + octal + "\n" + "En hexa: " + hexa);
-            
+
         }
 
         public void ejercicio19()
         {
             Console.WriteLine("Ingrese la cantidad de palabras que desea ingresar: ");
             bool flag;
-            int cantidad ;
+            int cantidad;
 
             do
             {
@@ -477,18 +477,62 @@ namespace EjerciciosCAI
 
             string[] listaDePalabras = new string[cantidad];
 
-            for(int i = 0; i< listaDePalabras.Length; i++)
+            for (int i = 0; i < listaDePalabras.Length; i++)
             {
                 Console.WriteLine("Ingrese una palabra");
                 listaDePalabras[i] = Console.ReadLine();
             }
 
-            foreach(string palabra in listaDePalabras)
+            foreach (string palabra in listaDePalabras)
             {
                 int largo = palabra.Length;
                 Console.WriteLine(palabra + " tiene " + largo + " caracteres");
 
             }
+        }
+
+        public void ejercicio20()
+        {
+
+            int numero;
+            int contador = 0;
+            bool flag;
+
+            Console.WriteLine("Ingrese un numero para calcular la cantidad de numeros primos entre el y 0 , y su factorial: ");
+            do
+            {
+                flag = false;
+
+                if (!int.TryParse(Console.ReadLine(), out numero))
+                {
+                    Console.WriteLine("Ud no ingreso un valor numerico");
+
+                }
+                else
+                {
+                    flag = true;
+                }
+
+            } while (flag == false);
+
+            for(int i=1; i< numero; i++)
+            {
+                if(ChequearNumeroPrimero(i) == true)
+                {
+                    contador++;
+                }
+            }
+
+            int resultado = 1;
+            for (int i = 1; i <= numero; i++)
+            {
+                resultado *= i;
+            }
+
+            Console.WriteLine("La cantidad de numeros primos entre 0 y " + numero + " Es: " + contador);
+            Console.WriteLine("El factorial de {0} es {1}", numero, resultado);
+
+
         }
     }
 }

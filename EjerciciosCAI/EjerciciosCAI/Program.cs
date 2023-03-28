@@ -24,7 +24,8 @@ namespace EjerciciosCAI
             //e.ejercicio16();
             //e.ejercicio17();
             //e.ejercicio18();
-            e.ejercicio19();
+            //e.ejercicio19();
+            e.ejercicio20();
         }
     }
 }

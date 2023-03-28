@@ -22,7 +22,9 @@ namespace EjerciciosCAI
             //e.ejercicio14();
             //e.ejercicio15();
             //e.ejercicio16();
-            e.ejercicio17();
+            //e.ejercicio17();
+            //e.ejercicio18();
+            e.ejercicio19();
         }
     }
 }

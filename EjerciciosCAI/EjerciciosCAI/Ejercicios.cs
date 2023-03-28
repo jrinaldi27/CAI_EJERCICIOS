@@ -416,5 +416,79 @@ namespace EjerciciosCAI
 
             
         }
+
+        public void ejercicio18()
+        {
+            bool flag;
+            Console.WriteLine("Ingrese un numero decimal para mostrar sus conversiones: ");
+            int numero = 0;
+            string binario;
+            string octal;
+            string hexa;
+
+            do
+            {
+                flag = false;
+
+                if (!int.TryParse(Console.ReadLine(), out numero))
+                {
+                    Console.WriteLine("Ud no ingreso un numero valido");
+                }
+                else
+                {
+                    flag = true;
+                }
+
+
+            }
+            while (flag == false);
+
+            binario = Convert.ToString(numero, 2);
+            octal = Convert.ToString(numero, 8);
+            hexa = Convert.ToString(numero, 16);
+
+
+            Console.WriteLine("El numero ingresado en decimal es: " + numero + "\n"
+                              + "En binario: " + binario + "\n" + "En octal:" + octal + "\n" + "En hexa: " + hexa);
+            
+        }
+
+        public void ejercicio19()
+        {
+            Console.WriteLine("Ingrese la cantidad de palabras que desea ingresar: ");
+            bool flag;
+            int cantidad ;
+
+            do
+            {
+                flag = false;
+
+                if (!int.TryParse(Console.ReadLine(), out cantidad))
+                {
+                    Console.WriteLine("Ud no ingreso un valor numerico");
+
+                }
+                else
+                {
+                    flag = true;
+                }
+
+            } while (flag == false);
+
+            string[] listaDePalabras = new string[cantidad];
+
+            for(int i = 0; i< listaDePalabras.Length; i++)
+            {
+                Console.WriteLine("Ingrese una palabra");
+                listaDePalabras[i] = Console.ReadLine();
+            }
+
+            foreach(string palabra in listaDePalabras)
+            {
+                int largo = palabra.Length;
+                Console.WriteLine(palabra + " tiene " + largo + " caracteres");
+
+            }
+        }
     }
 }

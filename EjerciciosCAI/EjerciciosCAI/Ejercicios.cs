@@ -379,13 +379,13 @@ namespace EjerciciosCAI
             string numero = Console.ReadLine();
             Console.WriteLine("Numero ingresado: " + numero + "tiene: " + (numero.Length ) + " digitos");
         }
-        
+
         public void ejercicio17()
         {
-            string[,] datosEmpleados = new string[5,2];
+            string[,] datosEmpleados = new string[5, 2];
             bool flag;
 
-            for (int i = 0; i< datosEmpleados.GetLength(0); i++)
+            for (int i = 0; i < datosEmpleados.GetLength(0); i++)
             {
                 string nombreEmpleado;
                 string sueldoEmpleado;
@@ -398,21 +398,23 @@ namespace EjerciciosCAI
                 datosEmpleados[i, 0] = nombreEmpleado;
                 datosEmpleados[i, 1] = sueldoEmpleado;
 
-                
+
             }
 
-            List<int> sueldos = new List<int> ();
+            int[] sueldos = new int[5] ;
 
             for(int i = 0; i<5; i++)
             {
-                Console.WriteLine("Nombre: " + datosEmpleados[i, 0] + "Sueldo: " + datosEmpleados[i, 1]);
+                Console.WriteLine("Nombre:" + datosEmpleados[i, 0] + " Sueldo:" + datosEmpleados[i, 1]);
 
                 sueldos[i] = Convert.ToInt32(datosEmpleados[i, 1]);
 
             }
+            Array.Sort(sueldos);
 
-            List<int> ordenados = new List<int>();
-            ordenados = sueldos.orderBy
+            Console.WriteLine("El salario mas alto es: " + sueldos[4]);
+
+            
         }
     }
 }

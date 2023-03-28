@@ -523,13 +523,13 @@ namespace EjerciciosCAI
                 }
             }
 
-            int resultado = 1;
+            double resultado = 1;
             for (int i = 1; i <= numero; i++)
             {
                 resultado *= i;
             }
 
-            Console.WriteLine("La cantidad de numeros primos entre 0 y " + numero + " Es: " + contador);
+            Console.WriteLine("La cantidad de numeros primos entre 0 y " + numero + " Es " + contador);
             Console.WriteLine("El factorial de {0} es {1}", numero, resultado);
 
 
